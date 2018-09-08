@@ -1,0 +1,20 @@
+body {
+    margin-bottom: 80px;
+}
+
+.navbar-light .navbar-brand {
+    color: #dddddd;
+}
+
+.navbar {
+    opacity: 0.8;
+}
+
+footer {
+    font-size: 12px;
+    color: #dddddd;
+}
+
+a {
+    color: #000000;
+}
