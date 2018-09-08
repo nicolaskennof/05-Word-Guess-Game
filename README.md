@@ -19,6 +19,11 @@ e. Once the user do not have any guesses left and the word is not discovered, th
 f. If a letter repeats itself in a word, all occurences will be shown.
 
 ========== 3. How to get started? ==========
-Please visit https://www.nicolaskennof.github.io/Word-Guess-Game
+Please visit https://nicolaskennof.github.io/Word-Guess-Game/
 
+========== 4. Who maintains and contributes? ==========
+Nicolas Kennof is the main contributor to this project.
 
+Contact email: nicolas.kennof@gmail.com
+
+!!!!Thank you for playing and loving pizzas!!!!

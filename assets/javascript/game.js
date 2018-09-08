@@ -33,8 +33,8 @@ var wordlist = [
     var wordoc = document.getElementById("word");
     var remainsCounter = document.getElementById("remainsCounter");
     var userkeylist = document.getElementById("userkeylist");
+    var remains = 13;
 
-var remains = 13;
 // in order that the computer chooses randomly a string in var ingredients
 var word = wordlist[Math.floor(Math.random() * wordlist.length)];
 console.log(word);
@@ -43,7 +43,6 @@ console.log(word);
     for ( var i = 0; i < word.length; i++) {
         hiddenWord[i] = " _ ";
    };
-    
 console.log(hiddenWord);
 
 // in order to detect the key the user presses
@@ -51,14 +50,12 @@ document.onkeyup = function(event) {
     var userinput = event.key;
     var userkey = userinput.toUpperCase();
     console.log(userkey);
-   
 
 // if the key was already pressed, show alert
 var boolkey = keyhistory.includes(userkey);
 console.log(boolkey);
 
 if ((boolkey) && (keyhistory.length > 0)) {
-
             alert("You already guessed " + userkey + " earlier!");
         }
 
@@ -97,14 +94,13 @@ if ((boolkey) && (keyhistory.length > 0)) {
 function image () {
     document.getElementById("img").src = "assets/images/" + word.toLowerCase() + ".jpg";
 }
-
 if ((hiddenWord.includes(" _ ")) && (remains === 0)) {
     console.log(hiddenWord.includes(" _ "));
     var audioLoses = new Audio("assets/sounds/lost.mp3");
     audioLoses.play();
     image();
     alert("Game Over!");
-    alert ("Press any key to get started with the Pizza Hangman!")
+    alert ("Press any key to try again the Pizza Hangman!")
     reset();
 }
 
@@ -117,7 +113,7 @@ if ((hiddenWord.includes(" _ ")) && (remains === 0)) {
     alert("You win! The word your discovered is " + word);
     wins++;
     winsCounter.textContent = wins;
-    alert ("Press any key to get started with the Pizza Hangman!")
+    alert ("Press any key to start a new Pizza Hangman game!")
     reset ();
 }
 };
